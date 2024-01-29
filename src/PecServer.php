@@ -15,7 +15,7 @@
  * Time: 16.43
  */
 
-namespace PhpPec\PhpPec;
+namespace PhpPec;
 
 
 use Fetch\Server;

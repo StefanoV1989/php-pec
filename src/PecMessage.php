@@ -15,12 +15,12 @@
  * Time: 15.10
  */
 
-namespace PhpPec\PhpPec;
+namespace PhpPec;
 
 use Fetch\Attachment;
 use Fetch\Message;
 use Fetch\Server;
-use PhpPec\PhpPec\Parser\PostacertParser;
+use PhpPec\Parser\PostacertParser;
 
 /**
  * Class PecMessage

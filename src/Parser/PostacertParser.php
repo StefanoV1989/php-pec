@@ -15,7 +15,7 @@
  * Time: 10.21
  */
 
-namespace PhpPec\PhpPec\Parser;
+namespace PhpPec\Parser;
 
 /**
  * Class PostacertParser
