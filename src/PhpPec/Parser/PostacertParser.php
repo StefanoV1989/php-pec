@@ -15,7 +15,7 @@
  * Time: 10.21
  */
 
-namespace PhpPec\Parser;
+namespace PhpPec\PhpPec\Parser;
 
 /**
  * Class PostacertParser
@@ -170,7 +170,7 @@ class PostacertParser
                             $parteMessaggio = imap_8bit($parteMessaggio);
                             break;
                         case 'quoted':
-                            $parteMessaggio = utf8_encode(quoted_printable_decode($parteMessaggio));
+                            $parteMessaggio = mb_convert_encoding(quoted_printable_decode($parteMessaggio), 'UTF-8');
                             break;
                         default:
                             $parteMessaggio .= strtolower($encoding[1]);

@@ -15,12 +15,12 @@
  * Time: 15.10
  */
 
-namespace PhpPec;
+namespace PhpPec\PhpPec;
 
 use Fetch\Attachment;
 use Fetch\Message;
 use Fetch\Server;
-use PhpPec\Parser\PostacertParser;
+use PhpPec\PhpPec\Parser\PostacertParser;
 
 /**
  * Class PecMessage
@@ -149,7 +149,7 @@ class PecMessage extends Message implements PecMessageInterface
      * @param bool $inHtml Se true, il metodo tenta di restituire la versione HTML del messagio
      * @return null|array
      */
-    function getTestiOriginali()
+    function getTestiOriginali($inHtml = false)
     {
         $postacert = $this->getAttachments('postacert.eml');
 
@@ -158,7 +158,7 @@ class PecMessage extends Message implements PecMessageInterface
             return null;
         }
         
-        /* @var Attachment $postacert */
+        /** @var Attachment $postacert */
         $parser = new PostacertParser($postacert->getData());
         return $parser->getFragments();
     }

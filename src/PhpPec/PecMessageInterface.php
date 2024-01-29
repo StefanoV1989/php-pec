@@ -15,7 +15,7 @@
  * Time: 15.14
  */
 
-namespace PhpPec;
+namespace PhpPec\PhpPec;
 use Fetch\Attachment;
 
 

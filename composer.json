@@ -16,7 +16,9 @@
         }
     ],
     "autoload": {
-        "psr-0": {"PhpPec": "src/"},
+        "psr-4": {
+            "PhpPec\\": "src/"
+        },
         "exclude-from-classmap": ["PhpPec/Tests"]
     }
 }
